@@ -29,7 +29,7 @@ class BankManagement{
       break;
       case 4:System.out.println("balance is "+a1.getEmployeeMiniStatement());//method to get mini statement of employee
       break;
-      case 5:e1.CreateAccount("ABC",7845);//method to create account
+      case 5:a1.CreateAccount("ABC",7845);//method to create account
       break;
       case 6:System.out.println("enter amount to be deposited"); //getting the amount to be deposited
       Amount = sc.nextInt();
