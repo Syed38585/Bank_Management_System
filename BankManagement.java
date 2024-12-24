@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Scanner;
 class BankManagement{
       public static void main(String[] args) {
       Bank b1 = new Bank();  //object istantiation of the class Bank
