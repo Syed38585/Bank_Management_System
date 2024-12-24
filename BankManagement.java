@@ -2,7 +2,7 @@ import java.util.*;
 class BankManagement{
       public static void main(String[] args) {
       Bank b1 = new Bank();  //object istantiation of the class Bank
-      Accounts e1 = new Accounts(); //object instantiation of the class Accounts
+      Accounts a1 = new Accounts(); //object instantiation of the class Accounts
       Scanner sc = new Scanner(System.in);
       int EmployeeSalary,CompanyExpense;
       int NewPassword,Amount;
@@ -17,23 +17,23 @@ class BankManagement{
       switch(n){
       case 1:System.out.println("enter the salary");
       EmployeeSalary=sc.nextInt();
-      System.out.println("money before salary in employee's account " + e1.curramount +"\nmoney in employee account after salary "+e1.getafters(EmployeeSalary));//employee account info //salary of employee is ex:10000
+      System.out.println("money before salary in employee's account " + a1.curramount +"\nmoney in employee account after salary "+a1.getafters(EmployeeSalary));//employee account info //salary of employee is ex:10000
       break;
       case 2:System.out.println("enter the salary of employee 1");
       CompanyExpense=sc.nextInt();
-      System.out.println("money in company account before paying salary " + e1.Companycurramount + "\nmoney in company account after paying salary "+ e1.getcompanym(CompanyExpense));//company account info
+      System.out.println("money in company account before paying salary " + a1.Companycurramount + "\nmoney in company account after paying salary "+ a1.getcompanym(CompanyExpense));//company account info
       break;
       case 3:System.out.println("enter the new Password");
       NewPassword=sc.nextInt();
-      System.out.println("the old password is "+b1.Password +"\nthe new password is "+e1.setEmployeePassword(NewPassword));//method to change password
+      System.out.println("the old password is "+b1.Password +"\nthe new password is "+a1.setEmployeePassword(NewPassword));//method to change password
       break;
-      case 4:System.out.println("balance is "+e1.getEmployeeMiniStatement());//method to get mini statement of employee
+      case 4:System.out.println("balance is "+a1.getEmployeeMiniStatement());//method to get mini statement of employee
       break;
       case 5:e1.CreateAccount("ABC",7845);//method to create account
       break;
       case 6:System.out.println("enter amount to be deposited"); //getting the amount to be deposited
       Amount = sc.nextInt();
-      e1.Deposit(Amount);//method to deposit amount
+      a1.Deposit(Amount);//method to deposit amount
       break;
       default: System.out.println("select within the 4 options");
       }
