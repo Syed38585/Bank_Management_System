@@ -13,8 +13,8 @@ class BankManagement{
       System.out.println("5.Create Account");
       System.out.println("6.Deposit");
       System.out.println("enter your choice\n");
-      int n =sc.nextInt();
-      switch(n){
+      int choice =sc.nextInt();
+      switch(choice){
       case 1:System.out.println("enter the salary");
       EmployeeSalary=sc.nextInt();
       System.out.println("money before salary in employee's account " + a1.curramount +"\nmoney in employee account after salary "+a1.getafters(EmployeeSalary));//employee account info //salary of employee is ex:10000
